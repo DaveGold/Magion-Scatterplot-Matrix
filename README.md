@@ -1,6 +1,6 @@
 # Magion-Scatterplot-Matrix
 
-This project is a entry for the PI Visualisation Hackathon (https://pisquare.osisoft.com/community/developers-club/hackathons/blog/2017/01/13/visualization-virtual-hackathon)
+This project is a entry for the PI Visualization Hackathon (https://pisquare.osisoft.com/community/developers-club/hackathons/blog/2017/01/13/visualization-virtual-hackathon)
 
 Here you find all the information what it is about:
 https://pisquare.osisoft.com/people/DGolverdingen/blog/2017/03/07/pi-visualization-hackathon-magion-entry
