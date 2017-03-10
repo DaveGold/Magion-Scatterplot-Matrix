@@ -1,0 +1,56 @@
+<ul kendo-panel-bar class="t-side-panel-bgcolor" style="font-size: 14px;">
+    <li class="k-state-active">
+        <span class="panel-bar-label-no-wrap">Data Retrieval Options</span>
+        <div style="margin: 10px 15px;">
+            <label>Points Interpolated Over Timerange</label>
+            <div class="config-option-single-row">
+                <div class="config-label">Interval ({{config.NumberOfCurrentPoints}})</div>
+                <input type="range" ng-model="config.NumberOfCurrentPoints" min="4" max="500" step="2" style="width: 100px;" class="ng-pristine ng-untouched ng-valid">
+            </div>
+        </div>
+    </li>
+
+    <li class="k-state-active">
+        <span class="panel-bar-label-no-wrap">Data Filter Options</span>
+        <div style="margin: 10px 15px;">
+            <label class="flex-align-center"><input type="checkbox" class="c-config-checkbox" ng-model="config.RemoveOutliers">Remove Outliers (Mahalanobis)<br /></label>
+            <div class="config-option-single-row">
+                <div class="config-label">Filter strength</div>
+                <input type="range" ng-model="config.FilterMultiplier" min="1" max="2" step="0.1" style="width: 100px;" class="ng-pristine ng-untouched ng-valid">
+            </div>
+        </div>
+    </li>
+
+    <li class="k-state-active">
+        <span class="panel-bar-label-no-wrap">Data Plot Options</span>
+        <div style="margin: 10px 15px;">
+            <label class="flex-align-center"><input type="checkbox" class="c-config-checkbox" ng-model="config.ShowBasicStatistics">Basic Statistics<br /></label>
+            <label class="flex-align-center"><input type="checkbox" class="c-config-checkbox" ng-model="config.ShowRegression">Linear Regression<br /></label>
+            <label class="flex-align-center"><input type="checkbox" class="c-config-checkbox" ng-model="config.ShowPearson">Pearson Correlation<br /></label>
+            <label class="flex-align-center"><input type="checkbox" class="c-config-checkbox" ng-model="config.ShowSpearman">Spearman Correlation<br /></label>
+        </div>
+    </li>
+
+    <li class="k-state-active">
+        <span class="panel-bar-label-no-wrap">About</span>
+        <div style="margin: 10px 15px;">
+            <label class="flex-align-center">
+                PI Visualisation Hackathon Entry
+            </label>
+            <br />
+            <label class="flex-align-center">Team: <a href="https://www.magion.nl/start.html?lang=en">Magion</a></label>
+            <label class="flex-align-center">Members: David Golverdingen</label>
+            <br />
+            <label class="flex-align-center">
+                Scatterplot Matrix inspired by R.
+                Enables direct interaction with the data in Coresight.
+                No external analytic engine or service is needed to perform basic statistical analyses.
+            </label>
+            <br/>
+            <label class="flex-align-center">
+                The Scatterplot Matrix is usefull to discover related data. However be aware that correlation does not imply causation! Your data might be influenced by an external variable.
+            </label>
+        </div>
+    </li>
+
+</ul>
